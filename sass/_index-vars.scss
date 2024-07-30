@@ -1,0 +1,31 @@
+:root {
+   --events-item-title-color: $c-4;
+   --events-item-desc-color: #999;
+   --events-item-w: 440px;
+   --events-item-gap: #{$base-p};
+
+   --channels-sec-h: 90px;
+   --channels-btn-size: 46px;
+   --categs-explore-search-cont-h: 80px;
+
+   --trendings-item-w: 300px;
+
+   --bottom-nav-btn-h: 60px;
+
+   @media screen and (max-width: map-get($breakpoints, "md")) {
+      --bottom-nav-btn-h: 48px;
+   }
+}
+
+$events-item-title-color: var(--events-item-title-color);
+$events-item-desc-color: var(--events-item-desc-color);
+$events-item-w: var(--events-item-w);
+$events-item-gap: var(--events-item-gap);
+
+$channels-sec-h: var(--channels-sec-h);
+$channels-btn-size: var(--channels-btn-size);
+$categs-explore-search-cont-h: var(--categs-explore-search-cont-h);
+
+$trendings-item-w: var(--trendings-item-w);
+
+$bottom-nav-btn-h: var(--bottom-nav-btn-h);

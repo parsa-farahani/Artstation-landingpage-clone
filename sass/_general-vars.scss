@@ -1,0 +1,88 @@
+
+:root {
+
+   --c-1: #0D0D10;
+   --c-1-h: #27272e;
+   --c-2: #202024;
+   --c-2-h: #404044;
+   --c-3: #404044;
+   --c-3-h: #606064;
+   --c-4: #FFFFFF;
+   --c-4-h: #dadada;
+   --c-5: #26BBFF;
+   --c-5-h: #51c8ff;
+   --c-6: #A9D34F;
+   --c-6-h: #A9D34F;
+   --c-7: #2D2D31;
+   --c-7-h: #606064;
+   --c-8: #18181c;
+   --c-8-h: #18181c;
+   
+   --main-bg: var(--c-1);
+   --main-txt: var(--c-4);
+   --sec-txt: #97979B;
+   --badge-bg: #0d0d10da;
+   --badge-txt: var(--c-4);
+
+   --base-m: .75rem;
+   --base-p: .75rem;
+   --base-r: 8px;
+   --base-border: 1px solid grey;
+   --base-fs: 1rem;
+   --scrollbar-size: 10px;
+
+   --base-inline-p: calc(var(--base-p) * 2);
+   --main-top-nav-h: 48px;
+   --main-top-nav-p: 4px;
+   --main-mobile-menu-top-nav-h: 120px;
+   --dropdown-item-h: 40px;
+   --dropdown-cont-p: calc(var(--base-p) * .7);
+   --dropdown-link-p: calc(var(--base-p) * 1.5);
+   --dropdown-cont-r: var(--base-r);
+   --dropdown-link-r: calc(var(--base-r) / 2);
+
+   @include md {
+      --main-top-nav-h: 80px;
+      --main-top-nav-p: 20px;
+      --main-bottom-nav-h: 80px;
+   }
+}
+
+$c-1: var(--c-1);
+$c-1-h: var(--c-1-h);
+$c-2: var(--c-2);
+$c-2-h: var(--c-2-h);
+$c-3: var(--c-3);
+$c-3-h: var(--c-3-h);
+$c-4: var(--c-4);
+$c-4-h: var(--c-4-h);
+$c-5: var(--c-5);
+$c-5-h: var(--c-5-h);
+$c-6: var(--c-6);
+$c-6-h: var(--c-6-h);
+$c-7: var(--c-7);
+$c-7-h: var(--c-7-h);
+$c-8: var(--c-8);
+$c-8-h: var(--c-8-h);
+
+$main-bg: var(--main-bg);
+$main-txt: var(--main-txt);
+$sec-txt: var(--sec-txt);
+
+$base-m: var(--base-m);
+$base-p: var(--base-p);
+$base-r: var(--base-r);
+$base-border: var(--base-border);
+$base-fs: var(--base-fs);
+$scrollbar-size: var(--scrollbar-size);
+
+$base-inline-p: var(--base-inline-p);
+$main-top-nav-h: var(--main-top-nav-h);
+$main-top-nav-p: var(--main-top-nav-p);
+$main-mobile-menu-top-nav-h: var(--main-mobile-menu-top-nav-h);
+$main-bottom-nav-h: var(--main-bottom-nav-h);
+$dropdown-item-h: var(--dropdown-item-h);
+$dropdown-cont-p: var(--dropdown-cont-p);
+$dropdown-link-p: var(--dropdown-link-p);
+$dropdown-cont-r: var(--dropdown-cont-r);
+$dropdown-link-r: var(--dropdown-link-r);

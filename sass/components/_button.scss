@@ -1,0 +1,102 @@
+.btn {
+   &,
+   &:any-link {
+      min-width: max-content;
+      padding: calc($base-p * .75) calc($base-p * 1.5);
+      border-radius: $base-r;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: calc($base-p * .5);
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color .3s;
+      vertical-align: center;
+      flex-shrink: 0;
+   }
+}
+
+.btn--sm {
+   &,
+   &:any-link {
+      padding: calc($base-p * .5) calc($base-p * 1);
+      border-radius: calc($base-r * .75);
+      font-size: .7rem;
+   }
+}
+
+.btn--md {
+   &,
+   &:any-link {
+      padding: calc($base-p * .55) calc($base-p * 2);
+      font-size: 1rem;
+   }
+}
+
+.btn--lg {
+   &,
+   &:any-link {
+      padding: calc($base-p * 1.25) calc($base-p * 2.5);
+      border-radius: calc($base-r * 1.25);
+      font-size: 1.25rem;
+   }
+}
+
+.btn--cir {
+   &,
+   &:any-link {
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+   }
+}
+
+.btn--pill {
+   &,
+   &:any-link {
+      border-radius: 100vw;
+   }
+}
+
+.btn--prim {
+   &,
+   &:any-link {
+      background-color: $c-5;
+      color: $c-1;
+      &:hover {
+         background-color: $c-5-h;
+      }
+   }
+}
+
+.btn--sec {
+   &,
+   &:any-link {
+      background-color: $c-3;
+      color: $c-4;
+      &:hover {
+         background-color: $c-3-h;
+      }
+   }
+}
+
+.btn--dark {
+   &,
+   &:any-link {
+      background-color: $c-1;
+      color: $c-4;
+      &:hover {
+         background-color: $c-1-h;
+      }
+   }
+}
+
+.btn--light {
+   &,
+   &:any-link {
+      background-color: $c-4;
+      color: $c-1;
+      &:hover {
+         background-color: $c-4-h;
+      }
+   }
+}

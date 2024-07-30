@@ -1,0 +1,81 @@
+.dropdown-wrapper {
+   position: absolute;
+   top: 100%;
+   left: -9999px;
+   right: 0;
+   min-width: 211px;
+   width: 100%;
+   height: auto;
+   overflow: hidden;
+   // max-height: 80vh;
+
+   @media screen and (max-width: map-get($breakpoints, 'md')) {
+      position: relative;
+      height: 0;
+   }
+
+   @include md {
+      width: max-content;
+   }
+}
+
+.dropdown-cont {
+   width: 100%;
+   max-width: 100vw;
+   overflow-x: hidden;
+   text-overflow: ellipsis;
+   height: auto;
+   max-height: 80vh;
+   overflow-y: auto;
+   margin-top: 8px;
+   padding: $dropdown-cont-p;
+   border-radius: $dropdown-cont-r;
+   color: inherit;
+   
+   @include md {
+      background-color: $c-2;
+      width: max-content;
+      color: $c-4;
+   }
+}
+
+.dropdown-list {
+   width: 100%;
+   height: 100%;
+}
+
+.dropdown-item {
+   width: 100%;
+   height: var(--dropdown-item-h);
+}
+
+.dropdown-link {
+   &,
+   &:any-link {
+      display: inline-block;
+      min-width: max-content;
+      width: 100%;
+      height: 100%;
+      padding-inline: $dropdown-link-p;
+      border-radius: $dropdown-link-r;
+      display: inline-flex;
+      align-items: center;
+      color: inherit;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      transition: .3s;
+   
+      &:hover {
+         background-color: $c-3;
+      }
+   }
+}
+
+.dropdown-icon-cont {
+   display: inline-block;
+   margin-right: $dropdown-link-p;
+}
+
+.dropdown-badge {
+   margin-left: auto;
+}

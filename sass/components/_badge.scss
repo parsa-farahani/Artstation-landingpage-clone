@@ -1,0 +1,62 @@
+.badge {
+   padding: .2rem .5rem;
+   padding: calc(var(--base-p) * .25) calc(var(--base-p) * .25);
+   border-radius: calc(var(--base-r) / 3);
+   display: inline-flex;
+   align-items: center;
+   justify-content: space-between;
+   vertical-align: center;
+   font-size: .7rem;
+   font-weight: 500;
+   background-color: var(--badge-bg);
+   color: $c-4;
+}
+
+.badge--cir {
+   aspect-ratio: 1 / 1;
+   border-radius: 50%;
+}
+
+.badge--pill {
+   border-radius: 100vw;
+}
+
+.badge--prim {
+   background-color: var(--c-5);
+   color: var(--c-1);
+   &:hover {
+      background-color: var(--c-5-h);
+   }
+}
+
+.badge--alert {
+   background-color: var(--c-6);
+   color: var(--c-1);
+   &:hover {
+      background-color: var(--c-6-h);
+   }
+}
+
+.badge--sec {
+   background-color: var(--c-3);
+   color: var(--c-4);
+   &:hover {
+      background-color: var(--c-3-h);
+   }
+}
+
+.badge--dark {
+   background-color: var(--c-1);
+   color: var(--c-4);
+   &:hover {
+      background-color: var(--c-1-h);
+   }
+}
+
+.badge--light {
+   background-color: var(--c-4);
+   color: var(--c-1);
+   &:hover {
+      background-color: var(--c-4-h);
+   }
+}
