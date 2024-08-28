@@ -231,27 +231,32 @@ document.addEventListener('click', e => {
       const btn = target.closest('.channels__category-selection__explore__menu__categories-cont__select-cont__btn');
       btn.classList.toggle('closed');
       (btn.getAttribute('aria-expanded') === 'false') ? btn.setAttribute('aria-expanded', true) : btn.setAttribute('aria-expanded', false) ;
+      return;
    }
 
    if (target.closest('.channels__category-selection__explore__btn')) {
       exploreMenu.classList.toggle('closed');
       (exploreMenuBtn.getAttribute('aria-expanded') === 'false') ? exploreMenuBtn.setAttribute('aria-expanded', true) : exploreMenuBtn.setAttribute('aria-expanded', false) ;
+      return;
    }
 
    if (target.closest('.channels__category-selection__explore__menu__close-btn')) {
       exploreMenu.classList.add('closed');
+      return;
    }
 
    if (target.closest('.channels__category-selection__ad-link__close-btn')) {
       const btn = target.closest('.channels__category-selection__ad-link__close-btn');
       btn.classList.toggle('active');
       (btn.getAttribute('aria-expanded') === 'false') ? btn.setAttribute('aria-expanded', true) : btn.setAttribute('aria-expanded', false) ;
+      return;
    }
 
    if (target.closest('.bottom-nav__inner__grid-controls__main-btn')) {
       const btn = target.closest('.bottom-nav__inner__grid-controls__main-btn');
       btn.closest('.bottom-nav__inner__grid-controls').classList.toggle('opened');
       (btn.getAttribute('aria-expanded') === 'false') ? btn.setAttribute('aria-expanded', true) : btn.setAttribute('aria-expanded', false) ;
+      return;
    }
    
    if (target.closest('.bottom-nav__inner__backtotop-btn')) {
@@ -259,6 +264,7 @@ document.addEventListener('click', e => {
          top: 0,
          behavior: 'smooth'
       })
+      return;
    }
 
    if (target.closest('.bottom-nav__inner__results-type__desktop-inner__btn')) {
@@ -267,17 +273,20 @@ document.addEventListener('click', e => {
          btn.classList.remove('active');
       })
       btn.classList.add('active');
+      return;
    }
 
    if (target.closest('.bottom-nav__inner__filter__btn')) {
       const btn = target.closest('.bottom-nav__inner__filter__btn');
       btn.closest('.bottom-nav__inner__filter').querySelector('.bottom-nav__inner__filter__menu').classList.toggle('opened');
       (btn.getAttribute('aria-expanded') === 'false') ? btn.setAttribute('aria-expanded', true) : btn.setAttribute('aria-expanded', false) ;
+      return;
    }
 
    if (target.closest('.bottom-nav__inner__results-type__mobile-inner__current-results-type__btn')) {
       mobileResultTypeMenu.classList.toggle('opened');
       (mobileResultTypeMenuCurrentBtn.getAttribute('aria-expanded') === 'false') ? mobileResultTypeMenuCurrentBtn.setAttribute('aria-expanded', true) : mobileResultTypeMenuCurrentBtn.setAttribute('aria-expanded', false) ;
+      return;
    }
 
    if (target.closest('.bottom-nav__inner__results-type__mobile-inner__results-type-select__btn')) {
@@ -288,20 +297,23 @@ document.addEventListener('click', e => {
       crntBtn.classList.add('active');
       mobileResultTypeMenu.classList.remove('opened');
       mobileResultTypeMenuCurrentBtn.querySelector('.bottom-nav__inner__results-type__mobile-inner__current-results-type__btn__text').innerText = crntBtn.innerText;
+      return;
    }
 
    if (target.closest('.dec-grid-size')) {
       artGrids.forEach(grid => {
          grid.style.setProperty('--base-grid-items-count', 3);
       })
+      return;
    }
 
    if (target.closest('.inc-grid-size')) {
       artGrids.forEach(grid => {
          grid.style.setProperty('--base-grid-items-count', 2);
       })
+      return;
    }
-})
+}, {passive: true})
 
 // back to top btn
 window.addEventListener('scroll', e => {
