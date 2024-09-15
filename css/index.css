@@ -94,6 +94,8 @@ a:any-link {
 
 button {
   border: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 input, input::placeholder,
@@ -1145,6 +1147,12 @@ section {
   align-items: center;
   justify-content: center;
   background-color: var(--c-7);
+  transform: scale(1);
+  transition: transform 0.2s ease-in-out;
+}
+.channels__category-selection__explore__btn:active {
+  transition: 0s;
+  transform: scale(0.95);
 }
 
 .channels__category-selection__explore__menu {
