@@ -297,7 +297,7 @@ section {
    @include md {
       position: sticky;
       top: calc($main-top-nav-h - 1px);
-      z-index: 100;
+      z-index: 10;
    }
 }
 

@@ -1119,7 +1119,7 @@ section {
   .channels {
     position: sticky;
     top: calc(var(--main-top-nav-h) - 1px);
-    z-index: 100;
+    z-index: 10;
   }
 }
 
